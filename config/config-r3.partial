@@ -2,12 +2,14 @@ conf t
 interface Ethernet0/1
 description Link to R1
 ipv6 address 2001:db8:13::3/64
+ipv6 nd suppress-ra
 ipv6 ospf 10 area 0
 no shutdown
 exit
 interface Ethernet0/2
 description Link to R2
 ipv6 address 2001:db8:23::3/64
+ipv6 nd suppress-ra
 ipv6 ospf 10 area 0
 no shutdown
 exit
