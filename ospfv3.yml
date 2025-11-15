@@ -10,22 +10,22 @@ topology:
     router1:
       kind: cisco_iol
       image: docker.io/arthurk99/cisco-iol:17.15.01
-      ports:
-        -5000:5000
+      #ports:
+      #  -5000:5000
       #startup-config: config/config-r1.partial
     
     router2:
       kind: cisco_iol
       image: docker.io/arthurk99/cisco-iol:17.15.01
-      ports:
-        -5000:5000
+      #ports:
+      #  -5000:5000
       #startup-config: config/config-r2.partial
       
     router3:
       kind: cisco_iol
       image: docker.io/arthurk99/cisco-iol:17.15.01
-      ports:
-        -5000:5000
+      #ports:
+      #  -5000:5000
       #startup-config: config/config-r3.partial
 
     PC1:
